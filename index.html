@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confetti</title>
+</head>
+
+<body>
+    <script src="https://rawgit.com/theraot/emoji/master/emoji.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script type="module">
+        const jsConfetti = new JSConfetti()
+
+        window.setInterval(() => {
+            jsConfetti.addConfetti({ emojis: emoji, emojiSize: 40, confettiNumber: 5 });
+        }, 200);
+    </script>
+</body>
+
+</html>
